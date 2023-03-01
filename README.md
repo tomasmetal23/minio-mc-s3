@@ -9,6 +9,6 @@ El servicio mc es el cliente de línea de comandos MC, que se utiliza para inter
 Para utilizar este docker-compose, simplemente guarda el archivo YAML en un directorio y ejecuta el comando docker-compose up. Esto iniciará ambos servicios y creará el bucket y el archivo especificados.
 
 ## MC
-Puedes agregar un segundo servicio para minio/mc en tu archivo docker-compose.yml. Luego, puedes crear buckets y cargar datos en ellos utilizando el comando mc dentro del contenedor de minio/mc. Puedes hacer esto manualmente ejecutando un contenedor de minio/mc o puedes crear un script para automatizar el proceso.
+El segundo servicio es minio/mc en tu archivo docker-compose.yml. Puedes crear buckets y cargar datos en ellos utilizando el comando mc dentro del contenedor de minio/mc. 
 
-A continuación, te muestro un ejemplo de cómo puedes agregar un segundo servicio de minio/mc a tu archivo docker-compose.yml y utilizarlo para crear buckets y cargar datos en ellos:
+Recuerda que debes adaptar los valores de las variables de entorno MC_HOST, MC_PORT, MC_ACCESS_KEY y MC_SECRET_KEY a los valores que has establecido para el servicio de minio.
