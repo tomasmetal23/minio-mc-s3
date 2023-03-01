@@ -1,5 +1,4 @@
-# minio-mc-s3
-Minio S3, despliegue de un S3, creación de buckets e importación de datos automática.
+# Minio-Mc-S3
 
 
 Este archivo YAML crea dos servicios: minio y mc. El servicio minio es el servidor de almacenamiento Minio S3, que se ejecuta en el puerto 9000 y utiliza las credenciales de acceso predefinidas minioadmin:minioadmin. Los datos y la configuración de Minio S3 se almacenan en los volúmenes locales ./data y ./config, respectivamente.
